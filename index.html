@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Dialer App - CSCI5849 W1</title>
+		<!-- Author: Matt Pennington -->
+		<link rel="stylesheet" href="./phone.css"/>
+	</head>
+	<body>
+
+		<div class="top" id="navigation">
+			<button class="nav-button" accesskey="r" id="dialer-nav">Dialer</button>
+			<button class="nav-button" accesskey="l" id="contact-list-nav">Contact List</button>
+			<button class="nav-button" accesskey="a" id="add-contact-nav">Add Contact</button>
+			<button class="nav-button" accesskey="h" id="help-nav">Help</button>
+		</div>
+
+		<div class="content" id="dialer">
+			<h1>Dialer</h1>
+			<input class="number-input" id="dialer-textbox" type="text" name="dialer-textbox" />
+			<div class="row" id="row1">
+				<button class="dialer-pad-button" id="1" accesskey="1">1</button>
+				<button class="dialer-pad-button" id="2" accesskey="2">2</button>
+				<button class="dialer-pad-button" id="3" accesskey="3">3</button>
+			</div>
+			<div class="row" id="row2">
+				<button class="dialer-pad-button" id="4" accesskey="4">4</button>
+				<button class="dialer-pad-button" id="5" accesskey="5">5</button>
+				<button class="dialer-pad-button" id="6" accesskey="6">6</button>
+			</div>
+			<div class="row" id="row3">
+				<button class="dialer-pad-button" id="7" accesskey="7">7</button>
+				<button class="dialer-pad-button" id="8" accesskey="8">8</button>
+				<button class="dialer-pad-button" id="9" accesskey="9">9</button>
+			</div>
+			<div class="row" id="row4">
+				<button class="dialer-pad-button" id="*" accesskey="*">*</button>
+				<button class="dialer-pad-button" id="0" accesskey="0">0</button>
+				<button class="dialer-pad-button" id="#" accesskey="#">#</button>
+			</div>
+			<div class="row" id="row5">
+				<button class="dialer-control-button" accesskey="c" id="dial-button">Dial</button>
+				<button class="dialer-control-button" accesskey="x" id="clear-dialer-button">Clear</button>
+			</div>
+		</div>
+
+		<div class="content" id="contact-list">
+			<h1>Contact List</h1>
+			<table class="contact-list-container" id="contact-list-container">
+				<tr>
+					<th>Image</th>
+					<th>Name</th>
+					<th>Phone Number</th>
+					<th>Email Address</th>
+					<th>Call Contact</th>
+				</tr>
+
+			</table>
+		</div>
+
+		<div class="content" id="add-contact">
+			<h1>Add Contact</h1>
+			<form class="contact-form" id="add-contact-form">
+				<label>Name</label>
+				<input type="text" name="name-input" placeholder="Jane Smith"/>
+
+				<label>Phone Number</label>
+				<input type="text" name="phone-input" placeholder="555-555-5555">
+
+				<label>Email Address</label>
+				<input type="text" name="email-input" placeholder="jane.smith@colorado.edu">
+
+				<label>Image URL</label>
+				<input type="text" name="imgsrc-input" placeholder="https://jane.smith.com/profile_pic.png">
+
+				<label>Image Description</label>
+				<input type="text" name="imgalt-input" placeholder="Portrait of Jane as a Young Woman">
+
+				<input class="add-contact-button" type="submit" value="Add Contact">
+				<button class="add-contact-button" id="clear-add-contact-form-button">Clear</button>
+			</form>
+		</div>
+
+		<div class="content" id="help">
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./phone.js"></script>
+	</body>
+</html>

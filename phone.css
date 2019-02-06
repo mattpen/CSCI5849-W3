@@ -1,0 +1,97 @@
+/* Author: Matt Pennington */
+
+#contact-list, #add-contact {
+	display: none;
+}
+
+#navigation {
+    background: lightgrey;
+    padding: 10px 10px 0 10px;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-button {
+    border: none;
+    margin-right: 10px
+}
+
+body, button, input {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+    padding: 10px;
+}
+
+.content {
+    margin: 10px;
+    width: 310px;
+}
+
+.row {
+    margin-top: 10px
+}
+
+.dialer-pad-button {
+    width: 98px;
+    height: 50px;
+}
+
+.dialer-control-button {
+    width: 150px;
+}
+
+#dialer-textbox {
+    width: 305px;
+    text-align: right;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+.add-contact-button {
+    background: lightgrey;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+.contact-button {
+	margin: 5px;
+}
+
+#contact-list {
+	width: 800px;
+}
+
+.error {
+	background: pink;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background: #DDDDDD;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td img {
+    width: 100px;
+}
+
+input[type="text"] {
+    width: 400px;
+}
