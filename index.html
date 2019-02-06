@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Dialer App - CSCI5849 W1</title>
     <!-- Author: Matt Pennington -->
@@ -15,8 +16,14 @@
 
     <div id="tab-content" role="main" aria-live="polite">
 	    <div class="content" id="dialer">
-	      <h1>Dialer</h1>
-	      <input class="number-input" id="dialer-textbox" type="text" name="dialer-textbox" />
+	      <h1 id="dialer-input-label">Dialer</h1>
+	      <input
+	      	class="number-input"
+	      	id="dialer-textbox"
+	      	type="text"
+	      	name="dialer-textbox"
+	      	aria-labelledby="dialer-input-label"
+      	/>
 	      <div class="row" id="row1">
 	        <button class="dialer-pad-button" id="1" accesskey="1">1</button>
 	        <button class="dialer-pad-button" id="2" accesskey="2">2</button>
