@@ -4,6 +4,10 @@
 	display: none;
 }
 
+#help {
+    width: 900px;
+}
+
 #navigation {
     background: lightgrey;
     padding: 10px 10px 0 10px;
