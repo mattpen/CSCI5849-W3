@@ -52,7 +52,7 @@
 
 	    <div class="content" id="contact-list">
 	      <h1>Contact List</h1>
-	      <table class="contact-list-container" id="contact-list-container">
+	      <table class="contact-list-container" id="contact-list-container" aria-live="polite">
 	        <tr>
 	          <th>Image</th>
 	          <th>Name</th>
@@ -66,7 +66,7 @@
 
 	    <div class="content" id="add-contact">
 	      <h1>Add Contact</h1>
-	      <form class="contact-form" id="add-contact-form">
+	      <form class="contact-form" id="add-contact-form" aria-controls="contact-list-container">
 	        <label>Name
 	        	<input type="text" name="name-input" placeholder="Jane Smith"/>
 	        </label>
@@ -93,13 +93,13 @@
 	    </div>
 
 	    <div class="content" id="help">
-	      <h1>Accessibility Features</h1>
+	      <h2>Accessibility Features</h1>
 	      <ul>
-	        <li>Alt text for images</li>
-	        <li>Keyboard navigation (standard TAB, Enter, Space nav)</li>
-	        <li>Aria-live regions</li>
+	        <li>Alt text is provided for images used by default, and requested for user input images.</li>
+	        <li>Keyboard navigation (standard TAB, Enter, Space nav) works throughout the entire app.</li>
+	        <li>ARIA-live regions are employed to manage updates for the tab navigation and Contact List. ARIA roles are defined to help screen readers distinguish between the navigation and main content.</li>
 	        <li>
-	          <span>Custom Keyboard Shortcuts - used in combination with the Alt key</span>
+	          <span>Custom Keyboard Shortcuts are provided for the TAB navigation and for the Dial tab. The following keys may be used in combination with the Alt key in order to bypass the standard TAB navigation.</span>
 	          <table>
 	            <tr>
 	              <th>Key</th>
@@ -136,8 +136,16 @@
 	            </tr>
 	          </table>
 	        </li>
-
 	      </ul>
+	      <h2>Citations</h2>
+	      <ul>
+	      	<li>I used the jQuery library, accessed from https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</li>
+	      	<li>I used the following images, discovered in a Google search</li>
+	      	<ul>
+	      		<li>https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Captain_Picard_Chair.jpg/220px-Captain_Picard_Chair.jpg</li>
+	      		<li>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/5dd2b41a-a9ab-43fd-ac7d-808fa27d2058/db2x9mf-15b30244-4a74-471c-b1c9-9995eb55640c.jpg</li>
+	      		<li>https://pbs.twimg.com/profile_images/617680537444970496/t-TG1dzW_400x400.jpg</li>	
+	      	</ul>
 	    </div>
 	  </div>
 
